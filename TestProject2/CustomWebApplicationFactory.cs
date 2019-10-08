@@ -22,7 +22,7 @@ namespace TestProject2
                 {
                     context.UseInMemoryDatabase("InMemoryDbForTesting")
                         .UseInternalServiceProvider(serviceProvider);
-                });
+                }, ServiceLifetime.Singleton);
 
                 var sp = services.BuildServiceProvider();
 
