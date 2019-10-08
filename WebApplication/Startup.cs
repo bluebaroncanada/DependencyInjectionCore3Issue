@@ -28,7 +28,7 @@ namespace WebApplication
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<VehicleService>();
+            services.AddTransient<VehicleService>();
             services.AddDbContext<ApplicationDbContext>();
         }
 
